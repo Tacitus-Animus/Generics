@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 class ArrayListStringTest {
 
 	@Test
@@ -20,7 +24,7 @@ class ArrayListStringTest {
 				strings[i++] = (ListString)l;
 			}
 		}
-		Assertions.assertTrue(Arrays.toString(strings).equals("[[one, two], [seven, eight]]"));
+		Assert.assertTrue(Arrays.toString(strings).equals("[[one, two], [seven, eight]]"));
 	}
 
 	@Test
@@ -37,7 +41,7 @@ class ArrayListStringTest {
 				strings[i++] = (ListString)l;
 			}
 		}
-		Assertions.assertTrue(Arrays.toString(strings).equals("[[one, two], [seven, eight]]"));
+		Assert.assertTrue(Arrays.toString(strings).equals("[[one, two], [seven, eight]]"));
 	}
 	
 	//delegation and inheritance are not interchangeable.
@@ -58,9 +62,9 @@ class ArrayListStringTest {
 		inherited.add("two");
 		
 		Assertions.assertThrows(ClassCastException.class, () -> ((List)delegated).add(1));
-		Assertions.assertAll(() -> ((List)inherited).add(4));//unchecked, no class cast error!
-		Assertions.assertTrue(original.toString().equals("[one]"));
-		Assertions.assertTrue(delegated.toString().equals("[one]"));
-		Assertions.assertTrue(inherited.toString().equals("[two, 4]"));
+		Assert.assertTrue(((List)inherited).add(4));//unchecked, no class cast error!
+		Assert.assertTrue(original.toString().equals("[one]"));
+		Assert.assertTrue(delegated.toString().equals("[one]"));
+		Assert.assertTrue(inherited.toString().equals("[two, 4]"));
 	}
 }

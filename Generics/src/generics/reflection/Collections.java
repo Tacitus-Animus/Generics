@@ -8,6 +8,9 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class Collections {
 
 	//Calling copy on ArrayList<Integer> will return a new ArrayList<Integer>.

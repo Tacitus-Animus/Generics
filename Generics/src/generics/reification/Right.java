@@ -4,6 +4,9 @@ package generics.reification;
 import java.util.Arrays;
 import java.util.Collection;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 /**
  * 
  * The Principle of Truth in Advertising:The reified type of an array must be a sub-type of the erasure of it's static type.

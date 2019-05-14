@@ -3,6 +3,8 @@ package generics.reification;
 import java.util.Arrays;
 import java.util.Collection;
 
+import org.junit.jupiter.api.Test;
+
 import fp.exceptionTests.TestHelper;
 import generics.reflection.GenericReflection;
 

@@ -3,6 +3,9 @@ package generics.reflection;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class ClassTests {
 
 	//The same type is always represented by the same class token.

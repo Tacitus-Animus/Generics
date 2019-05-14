@@ -1,5 +1,9 @@
 package generics.designPatterns.visitor;
 
+import static org.junit.Assert.assertTrue;
+
+import org.junit.jupiter.api.Test;
+
 public class TreeClient {
 
 	public static <T> String toString(Tree<T> tree) {

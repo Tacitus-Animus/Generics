@@ -7,6 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
-	<classpathentry kind="lib" path="/FunctionalProgramming/src/fp/executeAroundMethod/FileWriterEAM.java"/>
+	<classpathentry kind="src" path="/FunctionalProgramming"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

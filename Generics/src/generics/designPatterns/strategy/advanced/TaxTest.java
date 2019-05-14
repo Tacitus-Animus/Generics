@@ -1,5 +1,9 @@
 package generics.designPatterns.strategy.advanced;
 
+import static org.junit.Assert.assertTrue;
+
+import org.junit.jupiter.api.Test;
+
 class TaxTest {
 
 	@Test

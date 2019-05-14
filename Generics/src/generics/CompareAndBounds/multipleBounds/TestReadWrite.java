@@ -14,7 +14,7 @@ public class TestReadWrite {
 
 	public static void main(String[] args) throws IOException {
 		
-		fp.executeAroundMethod.FileWriterEAM.use("Source.txt", writer -> writer.writeStuff("Hello World"));
+		FileWriterEAM.use("Source.txt", writer -> writer.writeStuff("Hello World"));
 																					
 		//Generics here permits classes to extends both readable, appendable, and closeable.
 		//Most sub-classes implement both through a reader or writer; why not simplify it?
